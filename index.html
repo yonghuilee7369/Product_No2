@@ -1,14 +1,440 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
-  <link href='/style.css' rel='stylesheet'>
+  <title>TOEIC 전략 블로그 — 파트별 완벽 공략</title>
+  <meta name="description" content="TOEIC 파트별 전략과 팁을 한눈에. Part 1부터 Part 7까지 체계적인 학습 가이드." />
+  <link href="/style.css" rel="stylesheet" />
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
+
+  <!-- ===== Header ===== -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="#" class="logo">TOEIC 전략 블로그</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="메뉴 열기">&#9776;</button>
+      <nav>
+        <ul class="nav-list" id="navList">
+          <li><a href="#parts">파트 개요</a></li>
+          <li><a href="#part1">Part 1</a></li>
+          <li><a href="#part2">Part 2</a></li>
+          <li><a href="#part3">Part 3</a></li>
+          <li><a href="#part4">Part 4</a></li>
+          <li><a href="#part5">Part 5</a></li>
+          <li><a href="#part6">Part 6</a></li>
+          <li><a href="#part7">Part 7</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <div class="hero-content">
+      <span class="hero-badge">TOEIC 학습 가이드</span>
+      <h1>파트별 전략으로<br /><span class="gradient-text">TOEIC 고득점 달성</span></h1>
+      <p>Listening부터 Reading까지, 7개 파트의 핵심 전략과 실전 팁을 체계적으로 정리했습니다.</p>
+      <a href="#parts" class="hero-cta">전략 살펴보기 ↓</a>
+    </div>
+  </section>
+
+  <!-- ===== Part Cards Overview ===== -->
+  <section class="section" id="parts">
+    <h2 class="section-title fade-in">TOEIC 7개 파트 한눈에 보기</h2>
+    <p class="section-subtitle fade-in">각 파트를 클릭하면 상세 전략을 확인할 수 있습니다</p>
+
+    <div class="cards-grid">
+
+      <!-- Part 1 Card -->
+      <article class="part-card fade-in" data-target="part1">
+        <div class="card-header">
+          <div class="card-number">1</div>
+          <div>
+            <div class="card-title">사진 묘사</div>
+            <div class="card-type">Listening — 6문항</div>
+          </div>
+        </div>
+        <p class="card-desc">사진을 보고 가장 적절한 묘사를 고르는 파트. 시제와 태, 주어-동사 일치에 주의해야 합니다.</p>
+        <div class="card-tags">
+          <span class="card-tag">소거법</span>
+          <span class="card-tag">시제/태</span>
+          <span class="card-tag">주어-동사 일치</span>
+        </div>
+      </article>
+
+      <!-- Part 2 Card -->
+      <article class="part-card fade-in" data-target="part2">
+        <div class="card-header">
+          <div class="card-number">2</div>
+          <div>
+            <div class="card-title">질의응답</div>
+            <div class="card-type">Listening — 25문항</div>
+          </div>
+        </div>
+        <p class="card-desc">짧은 질문에 대한 적절한 응답을 선택하는 파트. 의문사 파악과 간접 응답 패턴이 핵심입니다.</p>
+        <div class="card-tags">
+          <span class="card-tag">의문사 파악</span>
+          <span class="card-tag">간접 응답</span>
+          <span class="card-tag">유사 발음 함정</span>
+        </div>
+      </article>
+
+      <!-- Part 3 Card -->
+      <article class="part-card fade-in" data-target="part3">
+        <div class="card-header">
+          <div class="card-number">3</div>
+          <div>
+            <div class="card-title">짧은 대화</div>
+            <div class="card-type">Listening — 39문항</div>
+          </div>
+        </div>
+        <p class="card-desc">두 사람 이상의 대화를 듣고 질문에 답하는 파트. 선택지를 미리 읽는 습관이 중요합니다.</p>
+        <div class="card-tags">
+          <span class="card-tag">선택지 미리 읽기</span>
+          <span class="card-tag">화자 의도</span>
+          <span class="card-tag">키워드 집중</span>
+        </div>
+      </article>
+
+      <!-- Part 4 Card -->
+      <article class="part-card fade-in" data-target="part4">
+        <div class="card-header">
+          <div class="card-number">4</div>
+          <div>
+            <div class="card-title">설명문</div>
+            <div class="card-type">Listening — 30문항</div>
+          </div>
+        </div>
+        <p class="card-desc">한 사람의 발화(안내, 연설 등)를 듣고 답하는 파트. 도입부에서 목적과 장소를 빠르게 파악하세요.</p>
+        <div class="card-tags">
+          <span class="card-tag">도입부 집중</span>
+          <span class="card-tag">목적/장소 파악</span>
+          <span class="card-tag">시각 자료 연계</span>
+        </div>
+      </article>
+
+      <!-- Part 5 Card -->
+      <article class="part-card fade-in" data-target="part5">
+        <div class="card-header">
+          <div class="card-number">5</div>
+          <div>
+            <div class="card-title">단문 빈칸 채우기</div>
+            <div class="card-type">Reading — 30문항</div>
+          </div>
+        </div>
+        <p class="card-desc">한 문장에서 빈칸에 알맞은 단어를 고르는 파트. 품사, 어휘, 문법 포인트를 구분하는 것이 핵심입니다.</p>
+        <div class="card-tags">
+          <span class="card-tag">품사 문제</span>
+          <span class="card-tag">어휘 문제</span>
+          <span class="card-tag">문법 포인트</span>
+        </div>
+      </article>
+
+      <!-- Part 6 Card -->
+      <article class="part-card fade-in" data-target="part6">
+        <div class="card-header">
+          <div class="card-number">6</div>
+          <div>
+            <div class="card-title">장문 빈칸 채우기</div>
+            <div class="card-type">Reading — 16문항</div>
+          </div>
+        </div>
+        <p class="card-desc">긴 지문에서 빈칸에 알맞은 단어나 문장을 고르는 파트. 전체 문맥 파악이 가장 중요합니다.</p>
+        <div class="card-tags">
+          <span class="card-tag">문맥 파악</span>
+          <span class="card-tag">문장 삽입</span>
+          <span class="card-tag">시간 배분</span>
+        </div>
+      </article>
+
+      <!-- Part 7 Card -->
+      <article class="part-card fade-in" data-target="part7">
+        <div class="card-header">
+          <div class="card-number">7</div>
+          <div>
+            <div class="card-title">독해</div>
+            <div class="card-type">Reading — 54문항</div>
+          </div>
+        </div>
+        <p class="card-desc">다양한 유형의 지문을 읽고 질문에 답하는 파트. 가장 많은 문항이 출제되어 시간 관리가 핵심입니다.</p>
+        <div class="card-tags">
+          <span class="card-tag">지문 유형별 접근</span>
+          <span class="card-tag">시간 관리</span>
+          <span class="card-tag">연계 문제</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ===== Part Detail Sections ===== -->
+
+  <!-- Part 1 Detail -->
+  <section class="part-detail" id="part1">
+    <div class="detail-inner fade-in">
+      <div class="detail-header">
+        <div class="detail-number">1</div>
+        <div class="detail-title-group">
+          <h2>Part 1 — 사진 묘사</h2>
+          <p class="detail-type">Listening Section | 6문항 | 약 6분</p>
+        </div>
+      </div>
+      <div class="detail-body">
+        <div class="detail-overview">
+          <h3>개요</h3>
+          <p>Part 1은 사진 한 장을 보고 4개의 음성 보기 중 사진을 가장 정확하게 묘사한 것을 고르는 문제입니다. TOEIC에서 가장 쉬운 파트로 평가되지만, 함정 선택지에 주의해야 합니다.</p>
+          <p>사진 속 인물의 동작, 사물의 상태, 배경 등을 빠르게 파악하고 음성을 들으면서 소거법을 적용하는 것이 핵심 전략입니다.</p>
+          <div class="tip-box">
+            <strong>TIP</strong>
+            <p>음성이 나오기 전에 사진을 미리 분석하세요. 인물이 있다면 동작과 위치를, 풍경 사진이라면 사물의 배치와 상태를 확인하세요.</p>
+          </div>
+        </div>
+        <div class="detail-strategies">
+          <h3>핵심 전략</h3>
+          <ul>
+            <li>소거법을 활용하세요 — 틀린 보기를 하나씩 제거하면 정답 확률이 높아집니다.</li>
+            <li>시제와 태(능동/수동)에 주의하세요 — "is being repaired"와 "has been repaired"는 의미가 다릅니다.</li>
+            <li>주어와 동사의 일치를 확인하세요 — 사진 속 주체가 누구인지 정확히 파악해야 합니다.</li>
+            <li>유사 발음 함정에 주의하세요 — copying과 coping처럼 비슷한 발음의 단어를 혼동하지 마세요.</li>
+            <li>사진에 없는 내용을 묘사하는 보기는 바로 제거하세요.</li>
+            <li>현재진행형(be + -ing)이 가장 많이 출제되므로 동작 묘사에 집중하세요.</li>
+          </ul>
+        </div>
+      </div>
+      <a href="#parts" class="back-to-cards">← 전체 파트 보기</a>
+    </div>
+  </section>
+
+  <!-- Part 2 Detail -->
+  <section class="part-detail" id="part2">
+    <div class="detail-inner fade-in">
+      <div class="detail-header">
+        <div class="detail-number">2</div>
+        <div class="detail-title-group">
+          <h2>Part 2 — 질의응답</h2>
+          <p class="detail-type">Listening Section | 25문항 | 약 10분</p>
+        </div>
+      </div>
+      <div class="detail-body">
+        <div class="detail-overview">
+          <h3>개요</h3>
+          <p>Part 2는 하나의 질문 또는 발화를 듣고 3개의 응답 중 가장 적절한 것을 고르는 문제입니다. 보기가 인쇄되지 않으므로 100% 듣기에 의존합니다.</p>
+          <p>최근 시험에서는 직접적인 대답이 아닌 간접 응답이 정답인 경우가 늘어나고 있어, 단순 의문사 매칭만으로는 풀기 어렵습니다.</p>
+          <div class="tip-box">
+            <strong>TIP</strong>
+            <p>질문의 첫 단어(의문사)를 놓치지 마세요. Who, Where, When, Why, How 등 의문사가 전체 질문의 방향을 결정합니다.</p>
+          </div>
+        </div>
+        <div class="detail-strategies">
+          <h3>핵심 전략</h3>
+          <ul>
+            <li>의문사를 정확히 파악하세요 — 첫 단어를 놓치면 전체 질문을 이해하기 어렵습니다.</li>
+            <li>간접 응답 패턴을 익히세요 — "When is the meeting?" → "Check the schedule."처럼 우회적 응답이 정답일 수 있습니다.</li>
+            <li>유사 발음 함정에 주의하세요 — meet/meat, right/write 등 동음이의어가 자주 출제됩니다.</li>
+            <li>Yes/No 질문에서 Yes/No 없이 시작하는 응답도 정답이 될 수 있습니다.</li>
+            <li>질문과 같은 단어가 포함된 보기는 오히려 함정일 확률이 높습니다.</li>
+            <li>제안/요청 표현(Why don't we~, Could you~)에 대한 수락/거절 패턴을 숙지하세요.</li>
+          </ul>
+        </div>
+      </div>
+      <a href="#parts" class="back-to-cards">← 전체 파트 보기</a>
+    </div>
+  </section>
+
+  <!-- Part 3 Detail -->
+  <section class="part-detail" id="part3">
+    <div class="detail-inner fade-in">
+      <div class="detail-header">
+        <div class="detail-number">3</div>
+        <div class="detail-title-group">
+          <h2>Part 3 — 짧은 대화</h2>
+          <p class="detail-type">Listening Section | 39문항 (13세트) | 약 17분</p>
+        </div>
+      </div>
+      <div class="detail-body">
+        <div class="detail-overview">
+          <h3>개요</h3>
+          <p>Part 3는 두 사람 또는 세 사람의 대화를 듣고 각 대화에 대한 3개의 질문에 답하는 문제입니다. 대화는 한 번만 들려주므로 집중력이 중요합니다.</p>
+          <p>대화가 시작되기 전에 질문과 선택지를 미리 읽어두면 어떤 정보에 집중해야 하는지 알 수 있어 정답률이 크게 올라갑니다.</p>
+          <div class="tip-box">
+            <strong>TIP</strong>
+            <p>Direction이 나오는 동안 첫 세트의 질문과 보기를 미리 읽으세요. 시간 싸움이 핵심인 파트입니다.</p>
+          </div>
+        </div>
+        <div class="detail-strategies">
+          <h3>핵심 전략</h3>
+          <ul>
+            <li>선택지를 미리 읽으세요 — 대화 시작 전에 질문과 보기를 빠르게 스캔하면 핵심 정보를 놓치지 않습니다.</li>
+            <li>화자의 의도를 파악하세요 — "What does the man imply?"와 같은 추론 문제가 자주 출제됩니다.</li>
+            <li>키워드에 집중하세요 — 장소, 시간, 이유, 요청 등 질문에서 묻는 핵심 정보를 포착하세요.</li>
+            <li>대화의 흐름(도입→전개→결론)을 파악하면 마지막 질문의 답을 예측할 수 있습니다.</li>
+            <li>3인 대화에서는 각 화자의 역할과 입장을 구분하세요.</li>
+            <li>시각 자료(표, 그래프)가 나오면 대화 내용과 시각 자료를 연계해서 풀어야 합니다.</li>
+          </ul>
+        </div>
+      </div>
+      <a href="#parts" class="back-to-cards">← 전체 파트 보기</a>
+    </div>
+  </section>
+
+  <!-- Part 4 Detail -->
+  <section class="part-detail" id="part4">
+    <div class="detail-inner fade-in">
+      <div class="detail-header">
+        <div class="detail-number">4</div>
+        <div class="detail-title-group">
+          <h2>Part 4 — 설명문</h2>
+          <p class="detail-type">Listening Section | 30문항 (10세트) | 약 16분</p>
+        </div>
+      </div>
+      <div class="detail-body">
+        <div class="detail-overview">
+          <h3>개요</h3>
+          <p>Part 4는 한 사람의 발화(공지, 안내, 뉴스, 전화 메시지 등)를 듣고 3개의 질문에 답하는 문제입니다. Part 3와 형식은 비슷하지만 한 사람만 말합니다.</p>
+          <p>도입부에서 발화의 목적, 장소, 화자의 정체를 파악하는 것이 전체 내용 이해의 열쇠입니다. 시각 자료 연계 문제도 출제됩니다.</p>
+          <div class="tip-box">
+            <strong>TIP</strong>
+            <p>발화 첫 1~2문장에 가장 중요한 정보(목적, 장소, 화자)가 집중되어 있습니다. 도입부를 절대 놓치지 마세요.</p>
+          </div>
+        </div>
+        <div class="detail-strategies">
+          <h3>핵심 전략</h3>
+          <ul>
+            <li>도입부에 집중하세요 — 첫 1~2문장에서 발화의 목적, 장소, 화자 정보를 파악할 수 있습니다.</li>
+            <li>발화 유형을 빠르게 분류하세요 — 공지, 안내 방송, 광고, 뉴스, 전화 메시지 등 유형별 패턴이 있습니다.</li>
+            <li>목적/장소/화자 관련 질문은 도입부에서, 세부 정보는 중간부에서, 다음 행동은 마무리부에서 답을 찾으세요.</li>
+            <li>시각 자료 연계 문제는 음성에서 언급하는 숫자나 키워드를 표/그래프와 대조하세요.</li>
+            <li>Paraphrase(같은 의미의 다른 표현)에 익숙해지세요 — 음성과 보기가 다른 단어로 같은 의미를 전달합니다.</li>
+            <li>Part 3와 마찬가지로 질문과 선택지를 미리 읽는 것이 필수입니다.</li>
+          </ul>
+        </div>
+      </div>
+      <a href="#parts" class="back-to-cards">← 전체 파트 보기</a>
+    </div>
+  </section>
+
+  <!-- Part 5 Detail -->
+  <section class="part-detail" id="part5">
+    <div class="detail-inner fade-in">
+      <div class="detail-header">
+        <div class="detail-number">5</div>
+        <div class="detail-title-group">
+          <h2>Part 5 — 단문 빈칸 채우기</h2>
+          <p class="detail-type">Reading Section | 30문항 | 권장 시간: 10분</p>
+        </div>
+      </div>
+      <div class="detail-body">
+        <div class="detail-overview">
+          <h3>개요</h3>
+          <p>Part 5는 하나의 문장에서 빈칸에 들어갈 가장 적절한 단어를 4개 보기 중 고르는 문제입니다. 문법과 어휘를 동시에 테스트합니다.</p>
+          <p>문제 유형을 빠르게 파악하는 것이 시간 절약의 핵심입니다. 품사 문제는 빈칸 앞뒤만 봐도 풀 수 있고, 어휘 문제는 전체 문맥을 파악해야 합니다.</p>
+          <div class="tip-box">
+            <strong>TIP</strong>
+            <p>Part 5는 한 문제당 20초 이내로 풀어야 합니다. 모르는 문제에 오래 매달리지 말고 Part 7에 시간을 확보하세요.</p>
+          </div>
+        </div>
+        <div class="detail-strategies">
+          <h3>핵심 전략</h3>
+          <ul>
+            <li>품사 문제: 보기의 어미(-ly, -tion, -ive 등)를 보고 빈칸에 필요한 품사를 판단하세요.</li>
+            <li>어휘 문제: 문장 전체를 읽고 문맥에 맞는 단어를 고르세요. 콜로케이션(자주 함께 쓰이는 단어 조합)을 숙지하세요.</li>
+            <li>문법 문제: 시제, 가정법, 관계사, 접속사, 전치사 등 빈출 문법 포인트를 정리하세요.</li>
+            <li>보기 4개의 형태가 비슷하면 품사 문제, 의미가 다르면 어휘 문제입니다. 문제 유형을 먼저 파악하세요.</li>
+            <li>빈칸 앞뒤의 품사 단서를 활용하세요 — 관사+___+명사 → 형용사, 동사+___+목적어 → 부사 등.</li>
+            <li>자주 출제되는 문법 포인트: 동명사 vs 부정사, 능동 vs 수동, 비교급/최상급, 접속부사.</li>
+          </ul>
+        </div>
+      </div>
+      <a href="#parts" class="back-to-cards">← 전체 파트 보기</a>
+    </div>
+  </section>
+
+  <!-- Part 6 Detail -->
+  <section class="part-detail" id="part6">
+    <div class="detail-inner fade-in">
+      <div class="detail-header">
+        <div class="detail-number">6</div>
+        <div class="detail-title-group">
+          <h2>Part 6 — 장문 빈칸 채우기</h2>
+          <p class="detail-type">Reading Section | 16문항 (4세트) | 권장 시간: 8분</p>
+        </div>
+      </div>
+      <div class="detail-body">
+        <div class="detail-overview">
+          <h3>개요</h3>
+          <p>Part 6는 이메일, 공지, 기사 등의 지문에서 4개의 빈칸에 알맞은 단어 또는 문장을 고르는 문제입니다. Part 5와 비슷하지만 전체 문맥을 고려해야 합니다.</p>
+          <p>특히 "문장 삽입" 문제(빈칸에 통째로 문장을 넣는 유형)는 앞뒤 문맥을 꼼꼼히 읽어야 합니다.</p>
+          <div class="tip-box">
+            <strong>TIP</strong>
+            <p>지문 전체를 먼저 쭉 읽은 다음 빈칸을 채우세요. 문맥 없이 빈칸만 보면 오답을 고를 확률이 높아집니다.</p>
+          </div>
+        </div>
+        <div class="detail-strategies">
+          <h3>핵심 전략</h3>
+          <ul>
+            <li>문맥 파악이 최우선입니다 — 지문의 주제와 흐름을 먼저 이해한 후 빈칸을 채우세요.</li>
+            <li>문장 삽입 문제: 빈칸 앞뒤 문장의 논리적 흐름(원인→결과, 대조, 추가 등)을 파악하세요.</li>
+            <li>시간 배분에 주의하세요 — Part 6에 너무 많은 시간을 쓰면 Part 7에서 시간이 부족합니다.</li>
+            <li>접속사/접속부사(however, therefore, in addition 등)가 보기에 있으면 앞뒤 문장의 관계를 확인하세요.</li>
+            <li>대명사(it, they, this)가 빈칸 뒤에 있으면 빈칸에 들어갈 내용이 그 대명사의 선행사가 될 수 있습니다.</li>
+            <li>지문 유형(이메일, 공지, 광고)에 따른 문체와 어휘 패턴을 익혀두세요.</li>
+          </ul>
+        </div>
+      </div>
+      <a href="#parts" class="back-to-cards">← 전체 파트 보기</a>
+    </div>
+  </section>
+
+  <!-- Part 7 Detail -->
+  <section class="part-detail" id="part7">
+    <div class="detail-inner fade-in">
+      <div class="detail-header">
+        <div class="detail-number">7</div>
+        <div class="detail-title-group">
+          <h2>Part 7 — 독해</h2>
+          <p class="detail-type">Reading Section | 54문항 | 권장 시간: 57분</p>
+        </div>
+      </div>
+      <div class="detail-body">
+        <div class="detail-overview">
+          <h3>개요</h3>
+          <p>Part 7은 TOEIC에서 가장 많은 문항(54문항)이 출제되는 파트입니다. 단일 지문, 이중 지문, 삼중 지문으로 구성되며, 이메일, 채팅, 기사, 광고, 양식 등 다양한 유형이 나옵니다.</p>
+          <p>시간 관리가 가장 중요한 파트입니다. Part 5와 6에서 시간을 절약해 Part 7에 충분한 시간을 확보하는 것이 고득점의 핵심 전략입니다.</p>
+          <div class="tip-box">
+            <strong>TIP</strong>
+            <p>질문을 먼저 읽고 필요한 정보만 지문에서 찾는 "스캐닝" 기법을 활용하세요. 모든 문장을 꼼꼼히 읽을 시간은 없습니다.</p>
+          </div>
+        </div>
+        <div class="detail-strategies">
+          <h3>핵심 전략</h3>
+          <ul>
+            <li>지문 유형별 접근법을 익히세요 — 이메일은 목적/요청, 광고는 특징/조건, 기사는 주제/세부사항에 집중하세요.</li>
+            <li>시간 관리를 철저히 하세요 — 단일 지문은 2~3분, 이중/삼중 지문은 4~5분을 목표로 하세요.</li>
+            <li>연계 문제(이중/삼중 지문)는 두 지문의 공통 정보를 교차 확인해야 합니다.</li>
+            <li>질문 먼저 읽기 → 키워드 파악 → 지문에서 해당 부분 찾기 순서로 풀면 효율적입니다.</li>
+            <li>"NOT" 문제와 추론 문제는 시간이 오래 걸리므로 나중에 풀거나 소거법을 활용하세요.</li>
+            <li>문장 삽입 문제: 제시된 문장의 접속사, 대명사, 시제를 단서로 적절한 위치를 찾으세요.</li>
+          </ul>
+        </div>
+      </div>
+      <a href="#parts" class="back-to-cards">← 전체 파트 보기</a>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p>TOEIC 전략 블로그 — 파트별 핵심 전략으로 목표 점수를 달성하세요.</p>
+      <div class="footer-links">
+        <a href="#parts">파트 개요</a>
+        <a href="#part1">Listening</a>
+        <a href="#part5">Reading</a>
+        <a href="#">맨 위로</a>
+      </div>
+    </div>
+  </footer>
+
   <script defer type="text/javascript" src="/main.js"></script>
 </body>
 </html>
